@@ -520,6 +520,8 @@ header.fixed_nav .menu_icon {
 .clients ul{
     list-style: none;
     overflow: hidden;
+    height: 120px;
+
 }
 
 .clients ul li{
@@ -544,7 +546,8 @@ header.fixed_nav .menu_icon {
 /*  Footer  */
 footer{
     width: 100%;
-    height: 500px;
+    /*height: 500px;*/
+    height: auto;
     background: #353535;
     overflow: hidden;
     padding-bottom: 20px;
@@ -572,7 +575,8 @@ footer .footer_widget{
 
 footer .f_cols{
     display: block;
-    width: 270px;
+    /*width: 270px;*/
+    width: inherit;
     height: auto;
     float: left;
     margin:100px 40px 0 0;
