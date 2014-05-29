@@ -575,8 +575,7 @@ footer .footer_widget{
 
 footer .f_cols{
     display: block;
-    /*width: 270px;*/
-    width: inherit;
+    width: 270px;
     height: auto;
     float: left;
     margin:100px 40px 0 0;
@@ -766,6 +765,10 @@ p.rights a{
         position: relative;
     }
 
+    footer .f_cols{
+        width: inherit;
+    }
+
 }
 
 @media (max-width:800px) {
@@ -839,5 +842,11 @@ p.rights a{
 
     .recent_work {
         height: auto;
+    }
+
+    footer .f_cols{
+        clear: both;
+        height: 80px;
+        margin-top: 80px;
     }
 }
