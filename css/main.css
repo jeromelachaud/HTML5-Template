@@ -541,8 +541,6 @@ header.fixed_nav .menu_icon {
 
 
 
-
-
 /*  Footer  */
 footer{
     width: 100%;
@@ -575,7 +573,8 @@ footer .footer_widget{
 
 footer .f_cols{
     display: block;
-    width: 270px;
+    /*width: 270px;*/
+    width: 30%;
     height: auto;
     float: left;
     margin:100px 40px 0 0;
