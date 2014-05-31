@@ -792,16 +792,24 @@ p.rights a{
     header.fixed_nav nav {
         display: block;
         background: #353434;
-        margin: 17px 0 0 0;
+        margin: 16px 0 0 0;
         padding: 0;
         border-left: 0;
         border-top: 1px #2c2c2c solid;
         overflow: hidden;
         text-align: center;
-        position: relative;
+        position: absolute;
+        left: 0;
+        right: 0;
         z-index: 999999;
         float: none;
         display: none;
+    }
+
+    header.fixed_nav nav {
+        background: #fff;
+        border-top: 1px #ccc solid;
+        margin: 11px 0 0 0;
     }
 
     header.trasparent_nav nav ul li,
@@ -810,6 +818,11 @@ p.rights a{
         width: 100%;
         border-bottom: 1px #2c2c2c solid;
     }
+
+    header.fixed_nav nav ul li{
+        border-bottom: 1px #ccc solid;
+    }
+
 
     header.trasparent_nav nav ul li:last-child,
     header.fixed_nav nav ul li:last-child{
@@ -831,9 +844,16 @@ p.rights a{
         background: #2c2c2c;
     }
 
-    header.trasparent_nav nav ul li a:hover,
-    header.fixed_nav nav ul li a:hover{
+    header.fixed_nav nav ul li a:active{
+        background: #c2c2c2;
+    }
+
+    header.trasparent_nav nav ul li a:hover{
         color: #fff;
+    }
+
+    header.fixed_nav nav ul li a:hover{
+        color: #000;
     }
 
     header.trasparent_nav nav {
@@ -849,6 +869,10 @@ p.rights a{
 
     header nav.show_menu{
         display: block;
+    }
+
+    header nav.hide_menu{
+        display: none;
     }
 
     .recent_work {

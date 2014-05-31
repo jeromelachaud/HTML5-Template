@@ -38,8 +38,16 @@ $(document).ready(function(){
 
 
     /*  hide-show mobile menu  */
-    $("#menu_icon").click(function(){
+    $("#menu_icon").click(function(e){
         $("#nav_menu").toggleClass("show_menu");
+        e.preventDefault();
+        return false;
+    });
+
+    /*  hide-show mobile menu  */
+    $("#menu_icon_fixed").click(function(e){
+        $("#nav_menu_fixed").toggleClass("show_menu");
+        e.preventDefault();
         return false;
     });
 
