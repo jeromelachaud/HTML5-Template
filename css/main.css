@@ -826,7 +826,7 @@ p.rights a{
 
     header.trasparent_nav nav ul li:last-child,
     header.fixed_nav nav ul li:last-child{
-        border-bottom: 0;
+        /*border-bottom: 0;*/
     }
 
     header.trasparent_nav nav ul li a,
